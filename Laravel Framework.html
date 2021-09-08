@@ -4,7 +4,6 @@
     <head>
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <title>Laravel 8</title>
       <!-- common.css -->
       <style>* {-webkit-tap-highlight-color: rgba(0,0,0,0);}html {-webkit-text-size-adjust: none;}body {font-family: -apple-system, Helvetica, Arial, sans-serif;margin: 0;padding: 20px;color: #333;word-wrap: break-word;}h1, h2, h3, h4, h5, h6 {line-height: 1.1;}img {max-width: 100% !important;height: auto;}blockquote {margin: 0;padding: 0 15px;color: #777;border-left: 4px solid #ddd;}hr {background-color: #ddd;border: 0;height: 1px;margin: 15px 0;}code {font-family: Menlo, Consolas, 'Ubuntu Mono', Monaco, 'source-code-pro', monospace;line-height: 1.4;margin: 0;padding: 0.2em 0;font-size: 90%;background-color: rgba(0,0,0,0.04);border-radius: 3px;}pre > code {margin: 0;padding: 0;font-size: 100%;word-break: normal;background: transparent;border: 0;}ol {list-style-type: decimal;}ol ol, ul ol {list-style-type: lower-latin;}ol ol ol, ul ol ol, ul ul ol, ol ul ol {list-style-type: lower-roman;}table {border-spacing: 0;border-collapse: collapse;margin-top: 0;margin-bottom: 16px;}table th {font-weight: bold;}table th, table td {padding: 6px 13px;border: 1px solid #ddd;}table tr {border-top: 1px solid #ccc;}table tr:nth-child(even) {background-color: #f8f8f8;}input[type="checkbox"] {cursor: default;margin-right: 0.5em;font-size: 13px;}.task-list-item {list-style-type: none;}.task-list-item+.task-list-item {margin-top: 3px;}.task-list-item input {float: left;margin: 0.3em 1em 0.25em -1.6em;vertical-align: middle;}#tag-field {margin: 8px 2px 10px;}#tag-field .tag {display: inline-block;background: #cadff3;border-radius: 4px;padding: 1px 8px;color: black;font-size: 12px;margin-right: 10px;line-height: 1.4;}</style>
       <!-- ace-static.css -->
@@ -21,7 +20,7 @@
         .latex-cell{white-space:pre-wrap;}
       </style>
       <!-- User CSS -->
-      <style> .ace-monokai .ace_gutter{background:none !important;border:2px solid #232831;}pre .ace-monokai{padding-top: 10px !important;padding-bottom:10px !important;border-radius:5px !important;background:#232831 !important;}.text-cell {font-size: 15px;}.code-cell {font-size: 12px;}.markdown-cell {font-size: 15px;}.latex-cell {font-size: 15px;}img{border-radius:5px;display:block;width:100% !important;}h1{font-size:1em !important;}</style>
+      <style> a{font-weight:bold;font-size:14px;}.ace-monokai .ace_gutter{background:none !important;border:2px solid #232831;}pre .ace-monokai{padding-top: 10px !important;padding-bottom:10px !important;border-radius:5px !important;background:#232831 !important;}code {background: #eee;border: 1px solid #ccc ;font-size: 13px;padding: 2px 10px 2px 10px;font-weight: bold;}.text-cell {font-size: 15px;}.code-cell {font-size: 12px;}.markdown-cell {font-size: 15px;}.latex-cell {font-size: 15px;}img{border-radius:5px;display:block;min-width:100% !important;}h1{font-size:1.2em !important;}</style>
     </head>
     <body>
       <div id="nav"><div>Up: <a href='index.html'>Index</a></div></div>
@@ -32,7 +31,7 @@
 <p>Laravel is a web application framework with expressive, elegant syntax. It is a free, open-source PHP web framework, created by Taylor Otwell back in 2011 and intended for the development of web applications following the MVC model.</p>
 <h1>What is MVC?</h1>
 <p>MVC mean (Model, Views, Controller). Model-View-Controller is a software architecture, or design pattern, that is used in software engineering, whose fundamental principle is based on the idea that the logic of an application should be separated from its presentation. Put simply, I would say that MVC is simply a better way of separating the logic of your application from the display. Model represents an object or carrying data. It can also have logic to update controller if its data changes.</p>
-<p><img src="resources/A3960DA053F384CD7D4FEE51C6686B61.png" alt="unnamed.png" width="466" height="303"></p>
+<p><img src="resources/BA182EC36878C1298AA9584400900A09.jpg" alt="MVC-architecture.jpg" width="740" height="370"></p>
 <p>The MVC principle is to separate the application into 3 main parts, known as the Model, the View, and the Controller. The inferred associations are associations that might seem apparent from the point of view of the user, and not from the actual software design.</p>
 <p>A simple way to think of this would be to consider the following:</p>
 <ul>
@@ -73,8 +72,8 @@ Laravel is an Open Source framework. It has a very rich set of features which wi
 <li>Redis</li>
 <li>Queues</li>
 <li>Event and command bus</li>
+<li>In Conclusion</li>
 </ul>
-<h1>In Conclusion</h1>
 <p>As touched on above, MVC is a really good way to begin producing clean, scalable, powerful, fast code in the least amount of time with the least amount of effort. Some MVC frameworks do not contain all these features, most contain one or two. My advice is experiment with a few MVC frameworks and find one that works for you.</p>
 <h1>Installation Composer</h1>
 <p>Laravel utilizes Composer to manage its dependencies. First, download a copy of the composer.phar. Once you have the PHAR archive, you can either keep it in your local project directory or move to usr/local/bin to use it globally on your system. On Windows, you can use the Composer Windows installer.</p>
@@ -87,7 +86,7 @@ Laravel is an Open Source framework. It has a very rich set of features which wi
 <pre><div class="ace-monokai"><div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0"><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_identifier">composer</span> <span class="ace_identifier">create</span><span class="ace_keyword ace_operator">-</span><span class="ace_identifier">project</span> <span class="ace_identifier">–</span><span class="ace_keyword ace_operator">-</span><span class="ace_identifier">prefer</span><span class="ace_keyword ace_operator">-</span><span class="ace_identifier">dist</span> <span class="ace_identifier">laravle</span>/<span class="ace_identifier">Laravel</span> <span class="ace_identifier">ProjectName</span>
 </div></div></div></pre>
 <h1>Install Xampp and Virtual host</h1>
-<p>We need Xampp, we can download it from their official page, download and install it. We will configure a Virtual Host in Xampp for a Laravel project. We need to edit C:\xampp\apache\conf\ extra\httpd-vhosts.conf and add following lines at the end of the file:</p>
+<p>We need Xampp, we can download it from their official page, download and install it. We will configure a Virtual Host in Xampp for a Laravel project. We need to edit <code>C:\xampp\apache\conf\ extra\httpd-vhosts.conf</code> and add following lines at the end of the file:</p>
 <pre><div class="ace-monokai"><div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0"><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_comment"># VirtualHost for LARAVEL.DEV</span>
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_keyword ace_operator">&lt;</span><span class="ace_identifier">VirtualHost</span> <span class="ace_keyword ace_operator">*</span>:<span class="ace_constant ace_numeric">80</span><span class="ace_keyword ace_operator">&gt;</span>
@@ -100,18 +99,18 @@ Laravel is an Open Source framework. It has a very rich set of features which wi
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>  <span class="ace_keyword ace_operator">&lt;</span>/<span class="ace_identifier">Directory</span><span class="ace_keyword ace_operator">&gt;</span>
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_keyword ace_operator">&lt;</span>/<span class="ace_identifier">VirtualHost</span><span class="ace_keyword ace_operator">&gt;</span>
 </div></div></div></pre>
+<p><img src="resources/848F9E6F5256AB6D5628E9324783D023.png" alt="4biko.png" width="1225" height="607"></p>
 <p>Congratulations!!, Your first Laravel Application running in localhost. Open your Browser type localhost or 127.0.0.1 the default Welcome page will appear, enjoy it.</p>
-<p><img src="resources/44D12E08638097061F31A7E927387604.png" alt="unnamed-2.png" width="512" height="320"></p>
 <h1>Larvel Application Structure</h1>
 <ul>
-<li><strong>Root Director</strong>y :The root directory of Laravel contains various folders and files as shown in the following figure -</li>
+<li><strong>Root Directory</strong> :The root directory of Laravel contains various folders and files as shown in the following figure -</li>
 <li><strong>app</strong> − This directory contains the core code of the application.</li>
 <li><strong>bootstrap</strong> − This directory contains the application bootstrapping script.</li>
 <li><strong>config</strong> − This directory contains configuration files of application.</li>
 <li><strong>database</strong> − This folder contains your database migration and seeds.</li>
 <li><strong>public</strong> − This is the application’s document root. It starts the Laravel application. It also contains the assets of the application like JavaScript, CSS, Images, etc.</li>
 <li><strong>resources</strong> − This directory contains raw assets such as the LESS &amp; Sass files, localization and language files, and Templates that are rendered as HTML.</li>
-<li><strong>storage</strong>− This directory contains App storage, like file uploads etc. Framework storage (cache), and application-generated logs.</li>
+<li><strong>storage</strong> − This directory contains App storage, like file uploads etc. Framework storage (cache), and application-generated logs.</li>
 <li><strong>test</strong> − This directory contains various test cases.</li>
 <li><strong>vendor</strong> − This directory contains composer dependencies.</li>
 <li><strong>App Directory</strong> : This is the application directory. It contains a variety of additional directories, which are described below</li>
@@ -126,24 +125,19 @@ Laravel is an Open Source framework. It has a very rich set of features which wi
 </ul>
 <h1>Laravel Configuration</h1>
 <p>The config directory, as the name implies, contains all of your application's configuration files. In this directory, you will find various files needed to configure database, session, mail, application, services etc.</p>
-<ul>
-<li>After installing Laravel, the first thing we need to do is to set the write permission for the directory storage and bootstrap/cache.</li>
-<li>Generate Application key to secure session and other encrypted data. If the root directory doesn’t contain the .env file then rename the .env.example to .env file and execute the following command where you have installed Laravel. The newly generated key can be seen in the .env file.</li>
-<li>You can also configure the locale, time zone, etc. of the application in the config/app.php file.</li>
-</ul>
+<p>After installing Laravel, the first thing we need to do is to set the write permission for the directory storage and bootstrap/cache.<br>
+Generate Application key to secure session and other encrypted data. If the root directory doesn’t contain the .env file then rename the .env.example to .env file and execute the following command where you have installed Laravel. The newly generated key can be seen in the .env file.<br>
+You can also configure the locale, time zone, etc. of the application in the <code>config/app.php</code> file.</p>
 <pre><div class="ace-monokai"><div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0"><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_identifier">Php</span> <span class="ace_identifier">artisan</span> <span class="ace_support ace_function">key</span>:<span class="ace_identifier">generate</span>
 </div></div></div></pre>
 <h1>Environmental Configuration</h1>
 <p>Laravel support different environment like testing, production etc. You can configure the environment of your application in the .env file of the root directory of your application. If you have installed Laravel using composer, this file will automatically be created.</p>
-<p><img src="resources/52EFF0DEAC27DD9E13C66554DF98025A.png" alt="unnamed-3.png" width="512" height="320"></p>
+<p><img src="resources/CA9DA61BCF8B7B5C58F07029891474DC.png" alt="093b0310500ec576caef9521f0e14deb48fe1cc8.png" width="1088" height="560"></p>
 <p>Local environment variable has been set. It can further be changed to production or testing as per your requirement.</p>
 <h1>Database Configuration</h1>
 <p>The database of your application can be configured from config/database.php file. You can set configuration parameters that can be used by different databases and you can also set the default one to use.</p>
-<pre><div class="ace-monokai"><div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0"><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>    
-</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_string">'default'</span> <span class="ace_keyword ace_operator">=&gt;</span> <span class="ace_identifier">env</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">'DB_CONNECTION'</span>, <span class="ace_string">'mysql'</span><span class="ace_paren ace_rparen">)</span>,
-</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
-</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
-</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>   <span class="ace_string">'connections'</span> <span class="ace_keyword ace_operator">=&gt;</span> <span class="ace_paren ace_lparen">[</span>
+<p><code>'default' =&gt; env('DB_CONNECTION', 'mysql')</code>,</p>
+<pre><div class="ace-monokai"><div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0"><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>   <span class="ace_string">'connections'</span> <span class="ace_keyword ace_operator">=&gt;</span> <span class="ace_paren ace_lparen">[</span>
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span>    <span class="ace_string">'sqlite'</span> <span class="ace_keyword ace_operator">=&gt;</span> <span class="ace_paren ace_lparen">[</span>
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span>    <span class="ace_string">'driver'</span> <span class="ace_keyword ace_operator">=&gt;</span> <span class="ace_string">'sqlite'</span>,
@@ -179,13 +173,11 @@ Laravel is an Open Source framework. It has a very rich set of features which wi
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span>    <span class="ace_string">'sslmode'</span> <span class="ace_keyword ace_operator">=&gt;</span> <span class="ace_string">'prefer'</span>,
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span>    <span class="ace_paren ace_rparen">]</span>,
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>    <span class="ace_paren ace_rparen">]</span>,
-</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
 </div></div></div></pre>
 <h1>Maintenance Mode</h1>
 <p>We need to modify our website on a regular basis. The website needs to be put on maintenance mode for this. Laravel has made this job easier. There are two artisan commands which are used to start and stop the maintenance mode which are described below.</p>
 <pre><div class="ace-monokai"><div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0"><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_identifier">php</span> <span class="ace_identifier">artisan</span> <span class="ace_identifier">down</span> <span class="ace_paren ace_lparen">(</span><span class="ace_identifier">maintenance</span> <span class="ace_identifier">mode</span><span class="ace_paren ace_rparen">)</span>
-</div></div></div></pre>
-<pre><div class="ace-monokai"><div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0"><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_identifier">php</span> <span class="ace_identifier">artisan</span> <span class="ace_identifier">up</span> <span class="ace_paren ace_lparen">(</span><span class="ace_identifier">stop</span> <span class="ace_identifier">maintenance</span> <span class="ace_identifier">mode</span><span class="ace_paren ace_rparen">)</span>
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_identifier">php</span> <span class="ace_identifier">artisan</span> <span class="ace_identifier">up</span> <span class="ace_paren ace_lparen">(</span><span class="ace_identifier">stop</span> <span class="ace_identifier">maintenance</span> <span class="ace_identifier">mode</span><span class="ace_paren ace_rparen">)</span>
 </div></div></div></pre>
 <h1>Basic Routing &amp; Controller</h1>
 <p>Most of the routes for your application will be defined in the routes/web.php file. The simplest Laravel routes consist of a URI and a Closure callback.</p>
@@ -203,7 +195,6 @@ Laravel is an Open Source framework. It has a very rich set of features which wi
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_support ace_class">Route</span><span class="ace_keyword ace_operator">::</span><span class="ace_support ace_function">delete</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">'foo/bar'</span>, <span class="ace_keyword">function</span> <span class="ace_paren ace_lparen">(</span><span class="ace_paren ace_rparen">)</span> <span class="ace_paren ace_lparen">{</span>
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>   <span class="ace_comment">// your code …</span>
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_paren ace_rparen">})</span>;
-</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
 </div></div></div></pre>
 <h1>Controller</h1>
 <p>In MVC framework, the letter ‘C’ stands for Controller. It acts as a directing traffic between Views and Models. In your terminal or cmd:</p>
@@ -220,14 +211,11 @@ Laravel is an Open Source framework. It has a very rich set of features which wi
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_paren ace_lparen">{</span>
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>    <span class="ace_comment">// your code here.</span>
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_paren ace_rparen">}</span>
-</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
 </div></div></div></pre>
 <h1>Exercise</h1>
-<ol>
-<li>Create a new folder in your <strong>resources/view</strong> and give the name is “ <strong>pages</strong> “.</li>
-<li>Create three new files in your <strong>resources/view/pages</strong> and give the name are <strong>home.blade.php</strong>, <strong>about.blade.php</strong> and <strong>services.blade.php</strong></li>
-</ol>
-<p>In your routes/web.php –</p>
+<p>Create a new folder in your <code>resources/view</code> and give the name is " <strong>pages</strong> ".<br>
+Create three new files in your <code>resources/view/pages</code> and give the name are home.blade.php, about.blade.php and <code>services.blade.php</code><br>
+In your r<code>outes/web.php</code> –</p>
 <pre><div class="ace-monokai"><div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0"><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_support ace_class">Route</span><span class="ace_keyword ace_operator">::</span><span class="ace_identifier">get</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">'/'</span>, <span class="ace_keyword">function</span><span class="ace_paren ace_lparen">(</span><span class="ace_paren ace_rparen">)</span><span class="ace_paren ace_lparen">{</span>
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>    <span class="ace_support ace_function">return</span> <span class="ace_identifier">view</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">'pages/home'</span><span class="ace_paren ace_rparen">)</span>;
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_paren ace_rparen">})</span>;
@@ -239,12 +227,12 @@ Laravel is an Open Source framework. It has a very rich set of features which wi
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_paren ace_rparen">})</span>;
 </div></div></div></pre>
 <p>Results:</p>
-<p><img src="resources/CFD19E03FCF427ED242D4A0CABE628F1.png" alt="Screen Shot 2564-09-06 at 4.24.01 PM.png" width="613" height="168"></p>
+<p><img src="resources/CFD19E03FCF427ED242D4A0CABE628F1.png" alt="CFD19E03FCF427ED242D4A0CABE628F1.png" width="613" height="168"></p>
 <h1>Exercise</h1>
 <p>Passing through the data from controllers to view.</p>
 <ol>
-<li>Open your command line and type “ php artisan make:controller PagesController ”. This  will create PagesController.</li>
-<li>In your  <strong>app/Http/Controllers/PagesController</strong></li>
+<li>Open your command line and type " php artisan make:controller PagesController ". This will create PagesController.</li>
+<li>In your <code>app/Http/Controllers/PagesController</code></li>
 </ol>
 <pre><div class="ace-monokai"><div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0"><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_keyword">public</span> <span class="ace_keyword">function</span> <span class="ace_identifier">index</span><span class="ace_paren ace_lparen">(</span><span class="ace_paren ace_rparen">)</span><span class="ace_paren ace_lparen">{</span>
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>        <span class="ace_variable">$value</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_string">'this is home comes from controller'</span>;
@@ -253,27 +241,26 @@ Laravel is an Open Source framework. It has a very rich set of features which wi
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_paren ace_rparen">}</span>
 </div></div></div></pre>
 <ol start="3">
-<li>In your route/web.php.</li>
+<li>In your <code>route/web.php</code>.</li>
 </ol>
 <pre><div class="ace-monokai"><div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0"><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_support ace_class">Route</span><span class="ace_keyword ace_operator">::</span><span class="ace_identifier">get</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">'/'</span>, <span class="ace_string">'PagesController@index'</span><span class="ace_paren ace_rparen">)</span>;
 </div></div></div></pre>
 <ol start="4">
 <li>In your view/pages/home.blade.php -</li>
+<li></li>
 </ol>
-<pre><div class="ace-monokai"><div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0"><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_meta ace_tag ace_punctuation ace_tag-open ace_xml">&lt;</span><span class="ace_meta ace_tag ace_tag-name ace_xml">h1</span><span class="ace_meta ace_tag ace_punctuation ace_tag-close ace_xml">&gt;</span><span class="ace_text ace_xml">This is Home</span><span class="ace_meta ace_tag ace_punctuation ace_end-tag-open ace_xml">&lt;/</span><span class="ace_meta ace_tag ace_tag-name ace_xml">h1</span><span class="ace_meta ace_tag ace_punctuation ace_tag-close ace_xml">&gt;</span>
-</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_meta ace_tag ace_punctuation ace_tag-open ace_xml">&lt;</span><span class="ace_meta ace_tag ace_tag-name ace_xml">hr</span><span class="ace_meta ace_tag ace_punctuation ace_tag-close ace_xml">&gt;</span>
-</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_meta ace_tag ace_punctuation ace_tag-open ace_xml">&lt;</span><span class="ace_meta ace_tag ace_tag-name ace_xml">p</span><span class="ace_meta ace_tag ace_punctuation ace_tag-close ace_xml">&gt;</span><span class="ace_text ace_xml">{{$value}}</span><span class="ace_meta ace_tag ace_punctuation ace_end-tag-open ace_xml">&lt;/</span><span class="ace_meta ace_tag ace_tag-name ace_xml">p</span><span class="ace_meta ace_tag ace_punctuation ace_tag-close ace_xml">&gt;</span>
+<pre><div class="ace-monokai"><div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0"><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_keyword ace_operator">&lt;</span><span class="ace_identifier">h1</span><span class="ace_keyword ace_operator">&gt;</span><span class="ace_identifier">This</span> <span class="ace_identifier">is</span> <span class="ace_identifier">Home</span><span class="ace_keyword ace_operator">&lt;</span>/<span class="ace_identifier">h1</span><span class="ace_keyword ace_operator">&gt;</span>
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_keyword ace_operator">&lt;</span><span class="ace_identifier">hr</span><span class="ace_keyword ace_operator">&gt;</span>
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_keyword ace_operator">&lt;</span><span class="ace_identifier">p</span><span class="ace_keyword ace_operator">&gt;</span><span class="ace_paren ace_lparen">{{</span><span class="ace_variable">$value</span><span class="ace_paren ace_rparen">}}</span><span class="ace_keyword ace_operator">&lt;</span>/<span class="ace_identifier">p</span><span class="ace_keyword ace_operator">&gt;</span>
 </div></div></div></pre>
 <p>Result:</p>
-<p><img src="resources/97A499E71B4B4B87CEDBC468B638C42F.png" alt="Screen Shot 2564-09-06 at 4.29.30 PM.png" width="618" height="164"></p>
 <h1>Laravel Templating or View</h1>
 <p><strong>What is View?</strong></p>
 <p>In MVC framework, the letter ‘V’ stands for Views, . It acts as in the context of a Model View Controller (MVC) architecture, is a software class that contains a template and data form and produces a response for the browser. It receives data from the Controller of the MVC and packages it and presents it to the browser for display.</p>
 <p><strong>What is Blade?</strong></p>
 <p>Blade is the simple, powerful templating engine provided with Laravel. Unlike other popular PHP templating engines, Blade does not restrict you from using plain PHP code in your views. In fact, all Blade views are compiled into plain PHP code and cached until they are modified, meaning Blade adds essentially zero overhead to your application. Blade view files use the .blade.php file extension and are typically stored in the resources/views directory.</p>
 <p>Two of the primary benefits of using Blade are template inheritance and sections. To get started, let's look at a simple example. First, we will examine a "master" page layout. Since most web applications maintain the same general layout across various pages, it's convenient to define this layout as a single Blade view:</p>
-<pre><div class="ace-monokai"><div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0"><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
-</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_keyword ace_operator">&lt;!--</span> <span class="ace_identifier">Stored</span> <span class="ace_identifier">in</span> <span class="ace_identifier">resources</span>/<span class="ace_identifier">views</span>/<span class="ace_identifier">layouts</span>/<span class="ace_identifier">app</span>.<span class="ace_identifier">blade</span>.<span class="ace_identifier">php</span> <span class="ace_keyword ace_operator">--&gt;</span>
+<pre><div class="ace-monokai"><div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0"><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_keyword ace_operator">&lt;!--</span> <span class="ace_identifier">Stored</span> <span class="ace_identifier">in</span> <span class="ace_identifier">resources</span>/<span class="ace_identifier">views</span>/<span class="ace_identifier">layouts</span>/<span class="ace_identifier">app</span>.<span class="ace_identifier">blade</span>.<span class="ace_identifier">php</span> <span class="ace_keyword ace_operator">--&gt;</span>
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_keyword ace_operator">&lt;</span><span class="ace_identifier">html</span><span class="ace_keyword ace_operator">&gt;</span>
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>    <span class="ace_keyword ace_operator">&lt;</span><span class="ace_identifier">head</span><span class="ace_keyword ace_operator">&gt;</span>
@@ -285,59 +272,56 @@ Laravel is an Open Source framework. It has a very rich set of features which wi
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span>    <span class="ace_keyword ace_operator">&lt;</span>/<span class="ace_identifier">div</span><span class="ace_keyword ace_operator">&gt;</span>
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>    <span class="ace_keyword ace_operator">&lt;</span>/<span class="ace_identifier">body</span><span class="ace_keyword ace_operator">&gt;</span>
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_keyword ace_operator">&lt;</span>/<span class="ace_identifier">html</span><span class="ace_keyword ace_operator">&gt;</span>
-</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
-</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
 </div></div></div></pre>
-<p><strong>Blade Defining A Layout</strong></p>
+<h1>Blade Defining A Layout</h1>
 <p>When defining a child view, use the Blade @extends directive to specify which layout the child view should "inherit". Views which extend a Blade layout may inject content into the layout's sections using @section directives. Remember, as seen in the example above, the contents of these sections will be displayed in the layout using @yield:</p>
 <pre><div class="ace-monokai"><div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0"><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>@<span class="ace_identifier">section</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">'content'</span><span class="ace_paren ace_rparen">)</span>
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>    <span class="ace_keyword ace_operator">&lt;</span><span class="ace_identifier">p</span><span class="ace_keyword ace_operator">&gt;</span><span class="ace_identifier">This</span> <span class="ace_identifier">is</span> <span class="ace_identifier">my</span> <span class="ace_identifier">body</span> <span class="ace_identifier">content</span>.<span class="ace_keyword ace_operator">&lt;</span>/<span class="ace_identifier">p</span><span class="ace_keyword ace_operator">&gt;</span>
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>@<span class="ace_identifier">endsection</span>
 </div></div></div></pre>
-<p><strong>Defining Blade Default Layout</strong></p>
+<h1>Defining Blade Default Layout</h1>
 <ol>
-<li>Create a new app.blade.php in your resource/views.</li>
+<li>Create a new app.blade.php in your <code>resource/views</code>.</li>
 <li>Go to <a href="http://www.getbootstrap.com">www.getbootstrap.com</a> and Click Getting Start.</li>
-<li>Copy the Starter Template’ code and paste in your app.blade.php .</li>
+<li>Copy the Starter Template’ code and paste in your <code>app.blade.php</code> .</li>
 <li>Creat a container inside your body tag.</li>
-<li>Defined blade extending layout In your home.blade.php , about.blade.php,  service.blade.php.</li>
+<li>Defined blade extending layout In your <code>home.blade.php</code> , <code>about.blade.php</code>, <code>service.blade.php</code>.</li>
 </ol>
 <pre><div class="ace-monokai"><div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0"><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>@<span class="ace_keyword">extends</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">'main'</span><span class="ace_paren ace_rparen">)</span>;
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>@<span class="ace_identifier">section</span>
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>    <span class="ace_keyword ace_operator">&lt;</span><span class="ace_identifier">h1</span><span class="ace_keyword ace_operator">&gt;</span><span class="ace_identifier">This</span> <span class="ace_identifier">is</span> <span class="ace_identifier">about</span>.<span class="ace_keyword ace_operator">&lt;</span>/<span class="ace_identifier">h1</span><span class="ace_keyword ace_operator">&gt;</span>
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>@<span class="ace_identifier">endsection</span>
 </div></div></div></pre>
-<p><strong>Creating Navigation bar</strong></p>
+<h1>Creating Navigation bar</h1>
 <ol>
-<li>Create a new folder in your app/ resources/view given the name is navigation.</li>
-<li>Create two new file inside your navigation folder given the name is header and footer.blade.php</li>
-<li>Copy bootstrap nav’s code and paste in your header.blade.php.</li>
-<li>Copy bootstrap footer’s code and paste in your footer.blade.php.</li>
+<li>Create a new folder in your <code>app/resources/view</code> given the name is navigation.</li>
+<li>Create two new file inside your navigation folder given the name is header and <code>footer.blade.php</code></li>
+<li>Copy bootstrap nav’s code and paste in your <code>header.blade.php</code>.</li>
+<li>Copy bootstrap footer’s code and paste in your <code>footer.blade.php</code>.</li>
 </ol>
-<p><strong>Including Blade Template</strong></p>
+<h1>Including Blade Template</h1>
 <p>You can combine some common HTML code into a single template and want to pull in the template within another template.</p>
-<p>Add these codes to your app.blade.php file.</p>
-<pre><div class="ace-monokai"><div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0"><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>  @<span class="ace_support ace_function">include</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">'navigation/header'</span><span class="ace_paren ace_rparen">)</span>
+<p>Add these codes to your<code>app.blade.php</code> file.</p>
+<pre><div class="ace-monokai"><div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0"><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>@<span class="ace_support ace_function">include</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">'navigation/header'</span><span class="ace_paren ace_rparen">)</span>
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>    <span class="ace_keyword ace_operator">&lt;</span><span class="ace_identifier">div</span> <span class="ace_keyword">class</span><span class="ace_keyword ace_operator">=</span><span class="ace_string">"container"</span> <span class="ace_identifier">id</span><span class="ace_keyword ace_operator">=</span><span class="ace_string">"main"</span><span class="ace_keyword ace_operator">&gt;</span>
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>        @<span class="ace_identifier">yield</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">'main'</span><span class="ace_paren ace_rparen">)</span>;
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>    <span class="ace_keyword ace_operator">&lt;</span>/<span class="ace_identifier">div</span><span class="ace_keyword ace_operator">&gt;</span>
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
-</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>  @<span class="ace_support ace_function">include</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">'navigation/footer'</span><span class="ace_paren ace_rparen">)</span>;
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>@<span class="ace_support ace_function">include</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">'navigation/footer'</span><span class="ace_paren ace_rparen">)</span>;
 </div></div></div></pre>
-<p><img src="resources/40D7B32856B44D833C7AB6FAFEA746B4.png" alt="Screen Shot 2564-09-06 at 4.41.34 PM.png" width="629" height="191"></p>
+<p><img src="resources/40D7B32856B44D833C7AB6FAFEA746B4.png" alt="40D7B32856B44D833C7AB6FAFEA746B4.png" width="629" height="191"></p>
 <h1>Laravel CRUD Application</h1>
 <p><strong>Database Configuration</strong></p>
 <ol>
 <li>Download phpMyAdmin Open it (type in your browser localhost:8000/phpMyadmin).</li>
-<li>Create a new database name such as: “ first_laravel”.</li>
+<li>Create a new database name such as: " first_laravel".</li>
 </ol>
-<p><img src="resources/ABD20C65879729F9D93601E0337E3297.png" alt="Screen Shot 2564-09-06 at 4.42.44 PM.png" width="604" height="135"></p>
+<p><img src="resources/9333183F855E75C4D1DDB85C583430C7.png" alt="root-login-1024x442.png" width="768" height="331"></p>
 <ol start="3">
-<li>Add db name , username and password In your <strong>app/config/database.php</strong></li>
+<li>Add db name , username and password In your <code>app/config/database.php</code></li>
 </ol>
-<pre><div class="ace-monokai"><div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0"><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
-</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>  <span class="ace_string ace_start">'</span><span class="ace_string">mysql</span><span class="ace_string ace_end">'</span> <span class="ace_keyword ace_operator">=&gt;</span> [
+<pre><div class="ace-monokai"><div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0"><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_string ace_start">'</span><span class="ace_string">mysql</span><span class="ace_string ace_end">'</span> <span class="ace_keyword ace_operator">=&gt;</span> [
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>    <span class="ace_string ace_start">'</span><span class="ace_string">driver</span><span class="ace_string ace_end">'</span> <span class="ace_keyword ace_operator">=&gt;</span> <span class="ace_string ace_start">'</span><span class="ace_string">mysql</span><span class="ace_string ace_end">'</span>,
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>    <span class="ace_string ace_start">'</span><span class="ace_string">host</span><span class="ace_string ace_end">'</span> <span class="ace_keyword ace_operator">=&gt;</span> <span class="ace_identifier">env</span><span class="ace_paren ace_lparen">(</span><span class="ace_string ace_start">'</span><span class="ace_string">DB_HOST</span><span class="ace_string ace_end">'</span>, <span class="ace_string ace_start">'</span><span class="ace_string">127.0.0.1</span><span class="ace_string ace_end">'</span><span class="ace_paren ace_rparen">)</span>,
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>    <span class="ace_string ace_start">'</span><span class="ace_string">port</span><span class="ace_string ace_end">'</span> <span class="ace_keyword ace_operator">=&gt;</span> <span class="ace_identifier">env</span><span class="ace_paren ace_lparen">(</span><span class="ace_string ace_start">'</span><span class="ace_string">DB_PORT</span><span class="ace_string ace_end">'</span>, <span class="ace_string ace_start">'</span><span class="ace_string">3306</span><span class="ace_string ace_end">'</span><span class="ace_paren ace_rparen">)</span>,
@@ -351,12 +335,11 @@ Laravel is an Open Source framework. It has a very rich set of features which wi
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>    <span class="ace_string ace_start">'</span><span class="ace_string">strict</span><span class="ace_string ace_end">'</span> <span class="ace_keyword ace_operator">=&gt;</span> <span class="ace_constant">true</span>,
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>    <span class="ace_string ace_start">'</span><span class="ace_string">engine</span><span class="ace_string ace_end">'</span> <span class="ace_keyword ace_operator">=&gt;</span> <span class="ace_constant">null</span>,
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>  ],
-</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
 </div></div></div></pre>
 <ol start="4">
 <li>Add db name , username and password In your app/.env file –</li>
 </ol>
-<pre><div class="ace-monokai"><div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0"><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>  <span class="ace_identifier">DB_CONNECTION</span><span class="ace_keyword ace_operator">=</span><span class="ace_identifier">mysql</span>
+<pre><div class="ace-monokai"><div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0"><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_identifier">DB_CONNECTION</span><span class="ace_keyword ace_operator">=</span><span class="ace_identifier">mysql</span>
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>  <span class="ace_identifier">DB_HOST</span><span class="ace_keyword ace_operator">=</span><span class="ace_constant ace_numeric">127.0</span>.<span class="ace_constant ace_numeric">0.1</span>
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>  <span class="ace_identifier">DB_PORT</span><span class="ace_keyword ace_operator">=</span><span class="ace_constant ace_numeric">3306</span>
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>  <span class="ace_identifier">DB_DATABASE</span><span class="ace_keyword ace_operator">=</span><span class="ace_identifier">first_laravle</span>
@@ -364,10 +347,9 @@ Laravel is an Open Source framework. It has a very rich set of features which wi
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>  <span class="ace_identifier">DB_PASSWORD</span><span class="ace_keyword ace_operator">=</span>
 </div></div></div></pre>
 <ol start="5">
-<li>add these code in your app/Providers/AppServiceProvider file -</li>
+<li>add these code in your <code>app/Providers/AppServiceProvider</code> file -</li>
 </ol>
 <pre><div class="ace-monokai"><div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0"><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_keyword">namespace</span> <span class="ace_identifier">App</span>\<span class="ace_identifier">Providers</span>;
-</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_keyword">use</span> <span class="ace_identifier">Illuminate</span>\<span class="ace_identifier">Support</span>\<span class="ace_identifier">ServiceProvider</span>;
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_keyword">use</span> <span class="ace_identifier">Illuminate</span>\<span class="ace_identifier">Support</span>\<span class="ace_identifier">Facades</span>\<span class="ace_identifier">Schema</span>;
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_keyword">class</span> <span class="ace_identifier">AppServiceProvider</span> <span class="ace_keyword">extends</span> <span class="ace_identifier">ServiceProvider</span>
@@ -393,34 +375,31 @@ Laravel is an Open Source framework. It has a very rich set of features which wi
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span>    <span class="ace_comment">//</span>
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>    <span class="ace_paren ace_rparen">}</span>
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>  <span class="ace_paren ace_rparen">}</span>
-</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
 </div></div></div></pre>
 <ol start="6">
 <li>In your terminal run this command.</li>
 </ol>
 <pre><div class="ace-monokai"><div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0"><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_identifier">php</span> <span class="ace_identifier">artisan</span> <span class="ace_identifier">migrate</span>
 </div></div></div></pre>
-<p><img src="resources/ADD5BBCF661AF5E9A5595B14A4F9F5E7.png" alt="Screen Shot 2564-09-06 at 4.47.09 PM.png" width="629" height="172"><br>
-This will creat in your databe table.</p>
-<p><img src="resources/1D52C8E7EE85BFF5870C628B67B623D9.png" alt="Screen Shot 2564-09-06 at 4.47.50 PM.png" width="602" height="119"></p>
+<p>Results-</p>
+<p><img src="resources/51BC09D5726499EA0EA0FFBED96DEAAB.png" alt="Laravel-Migration-Basics-migrate-command-GfG.png" width="634" height="293"></p>
+<p>This will creat in your databe table.</p>
+<p><img src="resources/EA61FD9B4078146505F9C814E6816141.jpg" alt="Table-Structure.jpg" width="872" height="379"></p>
 <h1>Creating A Blog Post</h1>
 <p><strong>What is Resources Controller</strong></p>
 <p>Laravel resource routing assigns the typical "CRUD" routes to a controller with a single line of code. For example, you may wish to create a controller that handles all HTTP requests for "posts" stored by your application. Using the make:controller Artisan command, we can quickly create such a controller:</p>
-<p><strong>Resources Controller Generating Using Artisan Command</strong></p>
-<p>In your cmd  type this command will create a controller inside your <strong>Http/Controller/PostsController</strong>.</p>
+<p>Resources Controller Generating Using Artisan Command</p>
+<p>In your cmd type this command will create a controller inside your</p>
+<p><code>Http/Controller/PostsController</code>.</p>
 <pre><div class="ace-monokai"><div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0"><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_identifier">php</span> <span class="ace_identifier">artisan</span> <span class="ace_identifier">make</span>:<span class="ace_identifier">controller</span> <span class="ace_identifier">PostsController</span> <span class="ace_keyword ace_operator">--</span><span class="ace_identifier">resource</span>
 </div></div></div></pre>
 <p><strong>Mass Assignment Model</strong></p>
 <p>Mass assignment is a process of sending an array of data that will be saved to the specified model at once. In general, you don’t need to save data on your model on one by one basis, but rather in a single process. Mass assignment is good, but there are certain security problems behind it. What if someone passes value to the model and without protection.</p>
-<ol>
-<li>Create a Mass Assignment Model run this command .This will create in your <strong>App/Post.php</strong> and <strong>App/database/post</strong> schema file.</li>
-</ol>
+<p>Create a Mass Assignment Model run this command .This will create in your <code>App/Post.php</code> and <code>App/database/pos</code>t schema file.</p>
 <pre><div class="ace-monokai"><div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0"><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_identifier">php</span> <span class="ace_identifier">artisan</span> <span class="ace_identifier">make</span>:<span class="ace_identifier">model</span> <span class="ace_identifier">Post</span> <span class="ace_keyword ace_operator">-</span><span class="ace_identifier">m</span>
 </div></div></div></pre>
-<ol start="2">
-<li>Add the code in your App/database/post schema file –</li>
-</ol>
-<pre><div class="ace-monokai"><div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0"><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>  <span class="ace_keyword">public</span> <span class="ace_keyword">function</span> <span class="ace_identifier">up</span><span class="ace_paren ace_lparen">(</span><span class="ace_paren ace_rparen">)</span>
+<p>Add the code in your App/database/post schema file –</p>
+<pre><div class="ace-monokai"><div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0"><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_keyword">public</span> <span class="ace_keyword">function</span> <span class="ace_identifier">up</span><span class="ace_paren ace_lparen">(</span><span class="ace_paren ace_rparen">)</span>
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>    <span class="ace_paren ace_lparen">{</span>
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span>    <span class="ace_support ace_class">Schema</span><span class="ace_keyword ace_operator">::</span><span class="ace_identifier">create</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">'posts'</span>, <span class="ace_keyword">function</span> <span class="ace_paren ace_lparen">(</span><span class="ace_identifier">Blueprint</span> <span class="ace_variable">$table</span><span class="ace_paren ace_rparen">)</span> <span class="ace_paren ace_lparen">{</span>
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span>    <span class="ace_variable">$table</span><span class="ace_keyword ace_operator">-&gt;</span><span class="ace_identifier">increments</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">'id'</span><span class="ace_paren ace_rparen">)</span>;
@@ -432,20 +411,20 @@ This will creat in your databe table.</p>
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span>    <span class="ace_paren ace_rparen">})</span>;
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>    <span class="ace_paren ace_rparen">}</span>
-</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
 </div></div></div></pre>
-<p>And then run in your cmd <strong>php artisan migrate</strong>.</p>
+<p>And then run in your <code>cmd php artisan migrat</code>e.</p>
 <h1>Introduction PHP Artisan Tinker</h1>
 <p><strong>Getting to Know the Laravel Tinker Shell</strong></p>
 <p>Laravel includes a powerful REPL, called Tinker, powered by Justin Hileman. The tinker console allows you to interact with your Laravel application from the command line in an interactive shell.</p>
 <p><strong>What is a REPL?</strong></p>
-<p>REPL stands for Read—Eval—Print—Loop, which is a type of interactive shell that takes in single user inputs, evaluates them, and returns the result to the user. I first learned about the concept of an interactive console through the rails console, which is part of the Ruby on Rails framework. Other languages, such as Ruby, come equipped with a REPL as a language feature. An interactive shell is a nice way to experiment with a language and framework.</p>
-<p>Creating Posts From Artisan Tinker</p>
+<p><strong>REPL</strong> stands for <strong>Read—Eval—Print—Loop</strong>, which is a type of interactive shell that takes in single user inputs, evaluates them, and returns the result to the user. I first learned about the concept of an interactive console through the rails console, which is part of the Ruby on Rails framework. Other languages, such as Ruby, come equipped with a REPL as a language feature. An interactive shell is a nice way to experiment with a language and framework.</p>
+<p><strong>Creating Posts From Artisan Tinker</strong></p>
 <ol>
-<li>in your cmd run this command ( php artisan tinker ).</li>
+<li>in your cmd run this command  <code>php artisan tinker</code>.</li>
 <li>creating a post title , body using this command.</li>
 </ol>
-<pre><div class="ace-monokai"><div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0"><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_keyword ace_operator">&gt;&gt;&gt;</span> <span class="ace_identifier">App</span>\<span class="ace_support ace_class">Post</span><span class="ace_keyword ace_operator">::</span><span class="ace_support ace_function">count</span><span class="ace_paren ace_lparen">(</span><span class="ace_paren ace_rparen">)</span>; <span class="ace_comment">// counting post</span>
+<pre><div class="ace-monokai"><div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0"><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_keyword ace_operator">&gt;&gt;&gt;</span> <span class="ace_identifier">App</span>\<span class="ace_support ace_class">Post</span><span class="ace_keyword ace_operator">::</span><span class="ace_support ace_function">count</span><span class="ace_paren ace_lparen">(</span><span class="ace_paren ace_rparen">)</span>; <span class="ace_comment">// counting post</span>
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_keyword ace_operator">=&gt;</span> <span class="ace_constant ace_numeric">0</span>
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_keyword ace_operator">&gt;&gt;&gt;</span> <span class="ace_variable">$post</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_identifier">New</span> <span class="ace_identifier">App</span>\<span class="ace_identifier">Post</span><span class="ace_paren ace_lparen">(</span><span class="ace_paren ace_rparen">)</span>; <span class="ace_comment">// defined variable</span>
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_keyword ace_operator">=&gt;</span> <span class="ace_identifier">App</span>\<span class="ace_identifier">Post</span> <span class="ace_paren ace_lparen">{</span><span class="ace_comment">#2311}</span>
@@ -487,11 +466,8 @@ This will creat in your databe table.</p>
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span> <span class="ace_identifier">created_at</span>: <span class="ace_string">"2018-04-27 23:50:23"</span>,
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span> <span class="ace_identifier">updated_at</span>: <span class="ace_string">"2018-04-27 23:50:23"</span>,
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>   <span class="ace_paren ace_rparen">}</span>
-</div></div></div></pre>
-<ol start="5">
-<li>Update Record From Artisan Tinker</li>
-</ol>
-<pre><div class="ace-monokai"><div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0"><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_keyword ace_operator">&gt;&gt;&gt;</span> <span class="ace_variable">$post</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_identifier">App</span>\<span class="ace_support ace_class">Post</span><span class="ace_keyword ace_operator">::</span><span class="ace_identifier">find</span><span class="ace_paren ace_lparen">(</span><span class="ace_constant ace_numeric">1</span><span class="ace_paren ace_rparen">)</span>; <span class="ace_comment">// first find the record</span>
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_identifier">Update</span> <span class="ace_identifier">Record</span> <span class="ace_identifier">From</span> <span class="ace_identifier">Artisan</span> <span class="ace_identifier">Tinker</span>
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_keyword ace_operator">&gt;&gt;&gt;</span> <span class="ace_variable">$post</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_identifier">App</span>\<span class="ace_support ace_class">Post</span><span class="ace_keyword ace_operator">::</span><span class="ace_identifier">find</span><span class="ace_paren ace_lparen">(</span><span class="ace_constant ace_numeric">1</span><span class="ace_paren ace_rparen">)</span>; <span class="ace_comment">// first find the record</span>
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_keyword ace_operator">=&gt;</span> <span class="ace_identifier">App</span>\<span class="ace_identifier">Post</span> <span class="ace_paren ace_lparen">{</span><span class="ace_comment">#2323</span>
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span> <span class="ace_identifier">id</span>: <span class="ace_constant ace_numeric">1</span>,
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span> <span class="ace_identifier">title</span>: <span class="ace_string">"Title One"</span>,
@@ -537,7 +513,7 @@ This will creat in your databe table.</p>
 <p><strong>Creating Post Index</strong></p>
 <ol>
 <li>Creating a folder in your app/resources/views give the name is posts.</li>
-<li>Creating a file inside your app/resources/view/posts folder give the name is index.blade.php.</li>
+<li>Creating a file inside your app/resources/view/posts folder give the name is <code>index.blade.php.</code></li>
 <li>In your PostsController index function –</li>
 </ol>
 <pre><div class="ace-monokai"><div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0"><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_keyword">use</span> <span class="ace_identifier">App</span>\<span class="ace_identifier">Post</span>;
@@ -551,11 +527,8 @@ This will creat in your databe table.</p>
 <li>In your routes/web.php file –</li>
 </ol>
 <pre><div class="ace-monokai"><div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0"><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_support ace_class">Route</span><span class="ace_keyword ace_operator">::</span><span class="ace_identifier">resource</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">'/posts'</span>, <span class="ace_string">'PostsController'</span><span class="ace_paren ace_rparen">)</span>;
-</div></div></div></pre>
-<ol start="5">
-<li>In your resources/view/posts/index.blade.php file add these codes –</li>
-</ol>
-<pre><div class="ace-monokai"><div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0"><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>@<span class="ace_keyword">extends</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">'app'</span><span class="ace_paren ace_rparen">)</span>;
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_identifier">In</span> <span class="ace_identifier">your</span> <span class="ace_identifier">resources</span>/<span class="ace_identifier">view</span>/<span class="ace_identifier">posts</span>/<span class="ace_identifier">index</span>.<span class="ace_identifier">blade</span>.<span class="ace_identifier">php</span> <span class="ace_support ace_function">file</span> <span class="ace_identifier">add</span> <span class="ace_identifier">these</span> <span class="ace_identifier">codes</span> <span class="ace_identifier">–</span>
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>@<span class="ace_keyword">extends</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">'app'</span><span class="ace_paren ace_rparen">)</span>;
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>@<span class="ace_identifier">section</span> <span class="ace_paren ace_lparen">(</span><span class="ace_string">'main'</span><span class="ace_paren ace_rparen">)</span>
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>   @<span class="ace_keyword">foreach</span><span class="ace_paren ace_lparen">(</span><span class="ace_variable">$posts</span> <span class="ace_keyword">as</span> <span class="ace_variable">$post</span><span class="ace_paren ace_rparen">)</span>
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>    <span class="ace_keyword ace_operator">&lt;</span><span class="ace_identifier">div</span> <span class="ace_keyword">class</span><span class="ace_keyword ace_operator">=</span><span class="ace_string">"card"</span><span class="ace_keyword ace_operator">&gt;</span>
@@ -566,10 +539,9 @@ This will creat in your databe table.</p>
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>    <span class="ace_keyword ace_operator">&lt;</span>/<span class="ace_identifier">div</span><span class="ace_keyword ace_operator">&gt;</span>
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>   @<span class="ace_keyword">endforeach</span>
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>@<span class="ace_identifier">endsection</span>
-</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
 </div></div></div></pre>
-<p>Result:</p>
-<p><img src="resources/508387384E0CDE373F2784BAB2274D5B.png" alt="Screen Shot 2564-09-06 at 5.00.45 PM.png" width="599" height="119"></p>
+<p>Result:<br>
+<img src="resources/508387384E0CDE373F2784BAB2274D5B.png" alt="508387384E0CDE373F2784BAB2274D5B.png" width="599" height="119"></p>
 <h1>Creating Post Using Form Collective</h1>
 <ol>
 <li>Go to <a href="https://laravelcollective.com/docs/5.4/html">https://laravelcollective.com/docs/5.4/html</a></li>
@@ -580,7 +552,7 @@ This will creat in your databe table.</p>
 <ol start="3">
 <li>Next, add your new provider to the providers array of config/app.php</li>
 </ol>
-<pre><div class="ace-monokai"><div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0"><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_string">'providers'</span> <span class="ace_keyword ace_operator">=&gt;</span> <span class="ace_paren ace_lparen">[</span>
+<pre><div class="ace-monokai"><div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0"><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>  <span class="ace_string">'providers'</span> <span class="ace_keyword ace_operator">=&gt;</span> <span class="ace_paren ace_lparen">[</span>
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>    <span class="ace_comment">// ...</span>
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>    <span class="ace_identifier">Collective</span>\<span class="ace_identifier">Html</span>\<span class="ace_support ace_class">HtmlServiceProvider</span><span class="ace_keyword ace_operator">::</span><span class="ace_keyword">class</span>,
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>    <span class="ace_comment">// ...</span>
@@ -599,34 +571,34 @@ This will creat in your databe table.</p>
 <ol start="5">
 <li>Create a new file in your app/resources/vies/ given the name create.blade.php</li>
 </ol>
-<p><img src="resources/65A53BDB93EA01AE407BBCA5F07B5747.png" alt="Screen Shot 2564-09-06 at 5.03.39 PM.png" width="608" height="273"></p>
+<p><img src="resources/65A53BDB93EA01AE407BBCA5F07B5747.png" alt="65A53BDB93EA01AE407BBCA5F07B5747.png" width="608" height="273"></p>
 <ol start="6">
 <li>In your PostsController create function –</li>
 </ol>
 <pre><div class="ace-monokai"><div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0"><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_keyword">public</span> <span class="ace_keyword">function</span> <span class="ace_identifier">create</span><span class="ace_paren ace_lparen">(</span><span class="ace_paren ace_rparen">)</span>
-</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>    <span class="ace_paren ace_lparen">{</span>
-</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span>   <span class="ace_support ace_function">return</span> <span class="ace_identifier">view</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">'posts/create'</span><span class="ace_paren ace_rparen">)</span>;
-</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>    <span class="ace_paren ace_rparen">}</span>
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>  <span class="ace_paren ace_lparen">{</span>
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span> <span class="ace_support ace_function">return</span> <span class="ace_identifier">view</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">'posts/create'</span><span class="ace_paren ace_rparen">)</span>;
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>  <span class="ace_paren ace_rparen">}</span>
 </div></div></div></pre>
 <ol start="7">
 <li>In your PostsController store function –</li>
 </ol>
 <pre><div class="ace-monokai"><div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0"><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_keyword">public</span> <span class="ace_keyword">function</span> <span class="ace_identifier">store</span><span class="ace_paren ace_lparen">(</span><span class="ace_identifier">Request</span> <span class="ace_variable">$request</span><span class="ace_paren ace_rparen">)</span>
-</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>    <span class="ace_paren ace_lparen">{</span>
-</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span>    <span class="ace_variable">$this</span> <span class="ace_keyword ace_operator">-&gt;</span> <span class="ace_identifier">validate</span><span class="ace_paren ace_lparen">(</span><span class="ace_variable">$request</span>,<span class="ace_paren ace_lparen">[</span>
-</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span>    <span class="ace_string">'title'</span><span class="ace_keyword ace_operator">=&gt;</span><span class="ace_string">'required'</span>,
-</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span>    <span class="ace_string">'body'</span> <span class="ace_keyword ace_operator">=&gt;</span> <span class="ace_string">'required'</span>
-</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span>    <span class="ace_paren ace_rparen">])</span>;
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>  <span class="ace_paren ace_lparen">{</span>
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span>  <span class="ace_variable">$this</span> <span class="ace_keyword ace_operator">-&gt;</span> <span class="ace_identifier">validate</span><span class="ace_paren ace_lparen">(</span><span class="ace_variable">$request</span>,<span class="ace_paren ace_lparen">[</span>
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span>  <span class="ace_string">'title'</span><span class="ace_keyword ace_operator">=&gt;</span><span class="ace_string">'required'</span>,
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span>  <span class="ace_string">'body'</span> <span class="ace_keyword ace_operator">=&gt;</span> <span class="ace_string">'required'</span>
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span>  <span class="ace_paren ace_rparen">])</span>;
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
-</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span>    <span class="ace_variable">$post</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_identifier">New</span> <span class="ace_identifier">Post</span>;
-</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span>    <span class="ace_variable">$post</span> <span class="ace_keyword ace_operator">-&gt;</span> <span class="ace_identifier">title</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_variable">$request</span><span class="ace_keyword ace_operator">-&gt;</span><span class="ace_identifier">input</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">'title'</span><span class="ace_paren ace_rparen">)</span>;
-</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span>    <span class="ace_variable">$post</span> <span class="ace_keyword ace_operator">-&gt;</span> <span class="ace_identifier">body</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_variable">$request</span><span class="ace_keyword ace_operator">-&gt;</span><span class="ace_identifier">input</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">'body'</span><span class="ace_paren ace_rparen">)</span>;
-</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span>    <span class="ace_variable">$post</span><span class="ace_keyword ace_operator">-&gt;</span> <span class="ace_identifier">save</span><span class="ace_paren ace_lparen">(</span><span class="ace_paren ace_rparen">)</span>;
-</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span>    <span class="ace_support ace_function">return</span> <span class="ace_identifier">redirect</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">'posts'</span><span class="ace_paren ace_rparen">)</span>;
-</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>    <span class="ace_paren ace_rparen">}</span>
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span>  <span class="ace_variable">$post</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_identifier">New</span> <span class="ace_identifier">Post</span>;
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span>  <span class="ace_variable">$post</span> <span class="ace_keyword ace_operator">-&gt;</span> <span class="ace_identifier">title</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_variable">$request</span><span class="ace_keyword ace_operator">-&gt;</span><span class="ace_identifier">input</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">'title'</span><span class="ace_paren ace_rparen">)</span>;
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span>  <span class="ace_variable">$post</span> <span class="ace_keyword ace_operator">-&gt;</span> <span class="ace_identifier">body</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_variable">$request</span><span class="ace_keyword ace_operator">-&gt;</span><span class="ace_identifier">input</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">'body'</span><span class="ace_paren ace_rparen">)</span>;
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span>  <span class="ace_variable">$post</span><span class="ace_keyword ace_operator">-&gt;</span> <span class="ace_identifier">save</span><span class="ace_paren ace_lparen">(</span><span class="ace_paren ace_rparen">)</span>;
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span>  <span class="ace_support ace_function">return</span> <span class="ace_identifier">redirect</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">'posts'</span><span class="ace_paren ace_rparen">)</span>;
+</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>  <span class="ace_paren ace_rparen">}</span>
 </div></div></div></pre>
-<p><img src="resources/AC7804F5EB2513C055A0F9E94A981115.png" alt="Screen Shot 2564-09-06 at 5.05.19 PM.png" width="619" height="266"></p>
-<p>Reading Post</p>
+<p><img src="resources/AC7804F5EB2513C055A0F9E94A981115.png" alt="AC7804F5EB2513C055A0F9E94A981115.png" width="619" height="266"></p>
+<h1>Reading Post</h1>
 <ol>
 <li>In your PagesController show function –</li>
 </ol>
@@ -635,7 +607,6 @@ This will creat in your databe table.</p>
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span>    <span class="ace_variable">$post</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_support ace_class">Post</span><span class="ace_keyword ace_operator">::</span><span class="ace_identifier">find</span><span class="ace_paren ace_lparen">(</span><span class="ace_variable">$id</span><span class="ace_paren ace_rparen">)</span>;
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span>    <span class="ace_support ace_function">return</span> <span class="ace_identifier">view</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">'posts/show'</span>, <span class="ace_support ace_function">compact</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">'post'</span><span class="ace_paren ace_rparen">))</span>;
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>    <span class="ace_paren ace_rparen">}</span>
-</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
 </div></div></div></pre>
 <ol start="2">
 <li>Create a file in your resources/views/post/ show.blade.php</li>
@@ -650,8 +621,8 @@ This will creat in your databe table.</p>
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>  <span class="ace_keyword ace_operator">&lt;</span>/<span class="ace_identifier">div</span><span class="ace_keyword ace_operator">&gt;</span>
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>@<span class="ace_identifier">endsection</span>
 </div></div></div></pre>
-<h2>Result:</h2>
-<p><img src="resources/05FBB8D60C6534D96FDAA6AA8F96E574.png" alt="Screen Shot 2564-09-06 at 5.06.56 PM.png" width="605" height="121"></p>
+<p>Result:</p>
+<p><img src="resources/05FBB8D60C6534D96FDAA6AA8F96E574.png" alt="05FBB8D60C6534D96FDAA6AA8F96E574.png" width="605" height="121"></p>
 <h1>Editing Post Record</h1>
 <ol>
 <li>In your PostsController edit function-</li>
@@ -663,9 +634,9 @@ This will creat in your databe table.</p>
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>    <span class="ace_paren ace_rparen">}</span>
 </div></div></div></pre>
 <ol start="2">
-<li>Create a new file in your <strong>resources/view/posts/edit.blade.php</strong></li>
+<li>Create a new file in your <code>resources/view/posts/edit.blade.php</code></li>
 </ol>
-<p><img src="resources/623965718C982FE92060DA3D381C9930.png" alt="Screen Shot 2564-09-06 at 5.08.35 PM.png" width="596" height="268"></p>
+<p><img src="resources/623965718C982FE92060DA3D381C9930.png" alt="aa.png" width="596" height="268"></p>
 <ol start="3">
 <li>In your PostsController update function.</li>
 </ol>
@@ -682,10 +653,9 @@ This will creat in your databe table.</p>
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span> <span class="ace_variable">$post</span><span class="ace_keyword ace_operator">-&gt;</span> <span class="ace_identifier">save</span><span class="ace_paren ace_lparen">(</span><span class="ace_paren ace_rparen">)</span>;
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span> <span class="ace_support ace_function">return</span> <span class="ace_identifier">redirect</span><span class="ace_paren ace_lparen">(</span><span class="ace_string">'/posts/'</span>.<span class="ace_variable">$post</span><span class="ace_keyword ace_operator">-&gt;</span><span class="ace_identifier">id</span> <span class="ace_paren ace_rparen">)</span>;
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>    <span class="ace_paren ace_rparen">}</span>   
-</div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>
 </div></div></div></pre>
 <p>Result:</p>
-<p><img src="resources/07931B6E0E3CCD4F93630BE2AD8C3FC1.png" alt="Screen Shot 2564-09-06 at 5.09.39 PM.png" width="597" height="201">\</p>
+<p><img src="resources/07931B6E0E3CCD4F93630BE2AD8C3FC1.png" alt="sdf.png" width="597" height="201"></p>
 <h1>Deleting Post Record</h1>
 <ol>
 <li>
@@ -695,7 +665,7 @@ This will creat in your databe table.</p>
 <p>In your PostsController destroy function</p>
 </li>
 </ol>
-<pre><div class="ace-monokai"><div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0"><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_keyword">public</span> <span class="ace_keyword">function</span> <span class="ace_identifier">destroy</span><span class="ace_paren ace_lparen">(</span><span class="ace_variable">$id</span><span class="ace_paren ace_rparen">)</span>
+<pre><div class="ace-monokai"><div class="ace_static_highlight ace_show_gutter" style="counter-reset:ace_line 0"><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>  <span class="ace_keyword">public</span> <span class="ace_keyword">function</span> <span class="ace_identifier">destroy</span><span class="ace_paren ace_lparen">(</span><span class="ace_variable">$id</span><span class="ace_paren ace_rparen">)</span>
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>    <span class="ace_paren ace_lparen">{</span>
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span>    <span class="ace_variable">$post</span> <span class="ace_keyword ace_operator">=</span> <span class="ace_support ace_class">Post</span><span class="ace_keyword ace_operator">::</span><span class="ace_identifier">find</span><span class="ace_paren ace_lparen">(</span><span class="ace_variable">$id</span><span class="ace_paren ace_rparen">)</span>;
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span><span class="ace_indent-guide">    </span>    <span class="ace_variable">$post</span> <span class="ace_keyword ace_operator">-&gt;</span> <span class="ace_support ace_function">delete</span><span class="ace_paren ace_lparen">(</span><span class="ace_paren ace_rparen">)</span>;
@@ -704,7 +674,7 @@ This will creat in your databe table.</p>
 </div><div class="ace_line"><span class="ace_gutter ace_gutter-cell" unselectable="on"></span>    <span class="ace_paren ace_rparen">}</span>
 </div></div></div></pre>
 <p>Reslut:</p>
-<p><img src="resources/B5170B7DE9510229A4CE15824B9C7126.png" alt="Screen Shot 2564-09-06 at 5.10.58 PM.png" width="598" height="139"></p>
+<p><img src="resources/B5170B7DE9510229A4CE15824B9C7126.png" alt="adf.png" width="598" height="139"></p>
 </div><div class="cell text-cell"><br></div><div class="cell text-cell"><h1><br></h1></div><div class="cell text-cell"><br></div></div>
       <script>document.body.onkeyup = function(e) {
 }</script>
